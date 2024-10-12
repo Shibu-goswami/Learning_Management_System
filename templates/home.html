@@ -1,0 +1,13 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <h1>Welcome to the Learning Management System</h1>
+    <p>Please choose to login as a Teacher or Student.</p>
+    <a href="{% url 'login' %}" class="btn btn-primary">Login</a>
+</div>
+{% endblock %}
